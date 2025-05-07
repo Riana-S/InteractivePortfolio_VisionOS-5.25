@@ -12,14 +12,11 @@ struct XRProjs: View {
     
     var body: some View {
         VStack(spacing: 40){
-            if selectedProject == "Portal" {
-                ContentView()
+            if selectedProject == "Apple" {
+                Starters()
             }
             else if selectedProject == "Unity"{
                 InTheFridge()
-            }
-            else if selectedProject == "Bubbles"{
-                
             }
             else if selectedProject == "Flutter"{
                 Thesis()
@@ -28,17 +25,14 @@ struct XRProjs: View {
                 VitAlz()
             }
             else{
-                Text("Take a peek at some of my favorite projects via the toolbar below!!").foregroundStyle(.primary).font(.system(size: 60)).fixedSize(horizontal: false, vertical: true)
+                Text("Take a peek at some of my favorite projects via the toolbar below!!").foregroundStyle(.primary).font(.system(size: 60)).fixedSize(horizontal: false, vertical: true).padding()
             }
         }
         .toolbar{
             ToolbarItem(placement: .bottomOrnament){
                 Menu{
-                    Button("Portal Doors - Swift"){
-                        selectedProject = "Portal"
-                    }
-                    Button("Bubbles - Swift"){
-                        selectedProject = "Bubbles"
+                    Button("VisionOS Exploratory Projects"){
+                        selectedProject = "Apple"
                     }
                     Button("In the Fridge - Unity"){
                         selectedProject = "Unity"

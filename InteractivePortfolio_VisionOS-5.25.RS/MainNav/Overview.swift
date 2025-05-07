@@ -16,6 +16,7 @@ struct Overview: View {
                 result.image?
                     .resizable()
                     .scaledToFill()
+                    .cornerRadius(50)
                 }
                 .frame(width: 200, height: 200)
             Text("Hi there, I'm Riana!").foregroundStyle(.primary).font(.system(size: 70))

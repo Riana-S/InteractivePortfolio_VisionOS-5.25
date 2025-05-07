@@ -22,6 +22,10 @@ struct NavTabs: View {
                 .tabItem{
                     Label("Research", systemImage: "sparkle.magnifyingglass")
                 }
+            More()
+                .tabItem{
+                    Label("More?", systemImage: "questionmark.bubble")
+                }
         }
     }
 }
