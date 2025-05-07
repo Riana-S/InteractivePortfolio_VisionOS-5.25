@@ -10,12 +10,8 @@ import SwiftUI
 @main
 struct InteractivePortfolio_VisionOS_5_25_RSApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-
-        ImmersiveSpace(id: "ImmersiveSpace") {
-            ImmersiveView()
+        WindowGroup{
+            NavTabs()
         }
     }
 }
